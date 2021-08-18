@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Hoja normalize-->
+    <link rel="stylesheet" href="/css/normalize.css">
+
+    <!--Referencia a la hoja de estilos-->
+    <link rel="stylesheet" href="/css/stylesRegister.css">
+
+    <!--Referencia on-line (no descargamos nada) para íconos de "Font Awesome"-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+          rel="stylesheet" />
+
+    <!--Tipografía Roboto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,100&display=swap" rel="stylesheet"> 
+
+    <title>Registro de usuarios</title>
+</head>
+<body>
+    <header>
+        <div class="top-header">
+            <div class="logo"> 
+                <img src="/images/logo-mercado-liebre.svg" alt="Logo">
+            </div> 
+            <div class="form"> 
+                <input type="text" placeholder="Buscar productos, marcas y más"> 
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </div>
+            <p id="cuotas-vav"><i class="fas fa-money-check-alt"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+        </div>
+        <!--nav representa una sección de la página cuyo propósito es proporcionar enlaces de navegación: menús, tablas de contenido-->
+        <nav>
+            <ul class="lista1">
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Tiendas Oficiales</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+            <ul class="lista2"> 
+                <li><a href="register">Creá tu cuenta</a> <i class="fas fa-user-circle"></i></li>
+                <li><a href="login">Ingresá</a> <i class="fas fa-sign-in-alt"></i></li>
+                <li><a href="/">Mis compras</a> <i class="fas fa-shopping-cart"></i></li>
+            </ul>
+        </nav> 
+    </header>
+    <main>
+        <section class="register">
+            <h2>¡Bienvenid@s a Mercado Liebre!</h2>
+            <h4>¿No tienes una cuenta?</h4>
+            <h4>Crea <span><a href="">tu cuenta</a></span></h4>
+            <form action="" method="" id="form1">
+                <div class="question">
+                    <label for="usuario">Escribe tu nombre de usuario o correo electrónico</label>
+                    <input type="text,email" name="usuario" id="usuario" placeholder="Pepe3849 or pepe@example.com" required>
+                </div>
+                <div class="question">
+                    <label for="password">Ingresa tu contraseña</label>
+                    <input type="password" name="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                    title="La contraseña debe tener una letra en minúscula, una letra en mayúscula, un número y al menos 8 caracteres"
+                    placeholder="  *Contraseña"  required>
+                </div>
+                <div class="question">
+                    <div class="radio">
+                        <input type="checkbox" name="perfil" id="perfil" value="sesion" checked>
+                        <label for="perfil">Mantener la sesión iniciada</label>
+                    </div>
+                </div>
+                <div class="question">
+                    <h4><a href="#">Recuperar contraseña</a></h4>
+                </div>
+                <div class="question">
+                    <button type="submit" form="form1">Ingresar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

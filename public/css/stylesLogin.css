@@ -1,0 +1,35 @@
+@import url(stylesNavBar.css);
+
+/**Selectores de tipo etiqueta*/
+:root {
+    --amarillo-transp: #fbe18d59;
+    --azul-morado-oscuro: #2d2f8e;
+    --azul-morado-claro: #585dba;
+    --amarillo: #EAC926;
+    --azul: #03264C;
+    --celeste: #1259c3;
+    --gris-oscuro: #666;
+    --gris-claro: #ebebeb;
+    --verde: #39b54a;
+    --crema:#f3f0d7;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--gris-claro);
+    font-family: 'Roboto', sans-serif;
+}
+
+h3{
+    font-size: 24px;
+}
+
+/*Cuerpo de texto*/
+p{
+    font-size: 12px;
+}

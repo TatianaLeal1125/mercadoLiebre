@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Hoja normalize-->
+    <link rel="stylesheet" href="/css/normalize.css">
+
+    <!--Referencia a la hoja de estilos-->
+    <link rel="stylesheet" href="/css/stylesRegister.css">
+
+    <!--Referencia on-line (no descargamos nada) para íconos de "Font Awesome"-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+          rel="stylesheet" />
+
+    <!--Tipografía Roboto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,100&display=swap" rel="stylesheet"> 
+
+    <title>Registro de usuarios</title>
+</head>
+<body>
+    <header>
+        <div class="top-header">
+            <div class="logo"> 
+                <img src="/images/logo-mercado-liebre.svg" alt="Logo">
+            </div> 
+            <div class="form"> 
+                <input type="text" placeholder="Buscar productos, marcas y más"> 
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </div>
+            <p id="cuotas-vav"><i class="fas fa-money-check-alt"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+        </div>
+        <!--nav representa una sección de la página cuyo propósito es proporcionar enlaces de navegación: menús, tablas de contenido-->
+        <nav>
+            <ul class="lista1">
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Tiendas Oficiales</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+            <ul class="lista2"> 
+                <li><a href="register">Creá tu cuenta</a> <i class="fas fa-user-circle"></i></li>
+                <li><a href="login">Ingresá</a> <i class="fas fa-sign-in-alt"></i></li>
+                <li><a href="/">Mis compras</a> <i class="fas fa-shopping-cart"></i></li>
+            </ul>
+        </nav> 
+    </header>
+    <main>
+        <section class="register">
+            <h2>¡Bienvenid@s a Mercado Liebre!</h2>
+            <h4>¿Ya tienes una cuenta?</h4>
+            <h4>Ingresa a <span><a href="">tu cuenta</a></span></h4>
+            <form action="" method="" id="form1">
+                <div class="question">
+                    <label for="foto">Foto de perfil</label>
+                    <input type="file" name="foto" id="foto" accept=".jpg" multiple>
+                </div>
+                <div class="question">
+                    <label for="nombre">¿Cuál es tu nombre y apellido?</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Pepito Peréz" required>
+                </div>
+                <div class="question">
+                    <label for="usuario">¿Cual es tu nombre de usuario?</label>
+                    <input type="text" name="usuario" id="usuario" placeholder="Pepito3849" required>
+                </div>
+                <div class="question">
+                    <label for="email">Escribe tu correo electrónico</label>
+                    <input type="email" name="email" id="email" placeholder="pepito3849@example.com" required>
+                </div>
+                <div class="question">
+                    <label for="fecha">Selecciona tu fecha de nacimiento</label>
+                    <input type="date" name="nombre" id="nombre" value="12/12/1989" min="01/01/1930" max="31/12/2021" required>
+                </div>
+                <div class="question">
+                    <label for="direccion">Ingresa tu dirección</label>
+                    <input type="text" name="direccion" id="direccion" placeholder="Calle falsa 123, CDMX">
+                </div>
+                <div class="question">
+                    <label for="perfil">Selecciona tu perfil de usuario</label>
+                    <div class="radio">
+                        <input type="radio" name="perfil" id="perfil" value="comprar" checked>
+                        <label for="perfil">Comprar</label>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" name="perfil" id="perfil" value="vender">
+                        <label for="perfil">Vender</label>
+                    </div>
+                </div>
+                <div class="question">
+                    <label for="intereses"></label>
+                    <select name="intereses" id="intereses">
+                        <option value="">Electrodomésticos</option>
+                        <option value="">Moda</option>
+                        <option value="">Hogar</option>
+                        <option value="">Juguetería</option>
+                        <option value="">Vida sana</option>
+                    </select>
+                </div>
+                <div class="question">
+                    <label for="contraseña">Crea una contraseña</label>
+                    <input type="password" name="contraseña" id="contraseña" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                    title="La contraseña debe tener una letra en minúscula, una letra en mayúscula, un número y al menos 8 caracteres"
+                    placeholder="  Contraseña"  required>
+                </div>
+                <div class="question">
+                    <label for="password">Confirma tu contraseña</label>
+                    <input type="password" name="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                    title="La contraseña debe tener una letra en minúscula, una letra en mayúscula, un número y al menos 8 caracteres"
+                    placeholder="  *Contraseña"  required>
+                </div>
+                <div class="question">
+                    <button type="submit" form="form1">Enviar</button>
+                    <button type="reset" form="form1">Limpiar</button>
+                </div>
+                
+            </form>
+        </section>
+    </main>
+    
+</body>
+</html>

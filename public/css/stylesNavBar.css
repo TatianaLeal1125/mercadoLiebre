@@ -1,0 +1,147 @@
+/*Agregando estilos al top header con media queries*/
+
+:root {
+    --amarillo: #EAC926;
+    --azul: #03264C;
+    --celeste: #1259c3;
+    --gris-oscuro: #666;
+    --gris-claro: #ebebeb;
+    --verde: #39b54a;
+    --dorado: #5e4906;
+}
+
+header{
+    width: 100vw;
+    background-color: var(--amarillo);
+    box-shadow: 0 10px 10px rgba(0,0,0,0.12), 0 10px 10px rgba(0,0,0,0.24);
+}
+
+header div.top-header{
+    padding: 5%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header div.logo{
+    width: 50%;
+    padding: 10px;
+}
+
+header div.form{
+    padding: auto;
+    width: 50%;
+    font-size: 12px;
+}
+
+header div.form input{
+    width: 75%;
+    margin: 3vh 0 0;
+    background-color: #ffffff;
+    border: 1px solid var(--gris-oscuro);
+    border-radius: 1px;
+    font-size: 1em;
+    padding: 5px;
+}
+
+header div.form button{
+    width: 5%;
+    min-width: 30px;
+    line-height: 2em;
+    border-radius: 1px solid var(--gris-oscuro);
+    display: inline-block;
+    text-align: center;
+}
+
+header .top-header p{
+    width: 100%;  
+    text-align: center; 
+    margin-top: 10px;
+}
+
+header nav{
+    font-size: 12px;
+    display: none;
+}
+
+header nav ul.lista1, ul.lista2{
+    margin-top: 10px;
+    list-style-type: none;
+}
+
+header nav ul.lista1, ul.lista2 li a{
+    text-decoration: none;
+    color: black;
+}
+
+header nav a:visited{
+    color:var(--dorado);
+}
+
+@media (min-width: 361px){
+    nav{
+        display: inline;
+    }
+}
+
+@media (min-width: 769px){
+    header nav{
+        display: inline;
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 20px;
+    }
+
+    header nav ul.lista1 {
+        width: 50%;
+        list-style-type: none;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    header nav ul.lista1 li{
+        margin-left: 15px;;
+    }
+
+    header nav ul.lista1 a{
+        text-decoration: none;
+        color: black;
+    }
+
+    header nav ul.lista2{
+        width: 50%;
+        list-style-type: none;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-end;
+    }
+
+    header nav ul.lista2 li{
+        margin-right: 15px;;
+    }
+
+    header div.top-header{
+        width: 100vw;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    header div.logo{
+        width: 30%;
+        align-self: center;
+    }
+
+    header div.form{
+        width: 30%;
+        align-self: flex-start;
+    }
+    
+    header .top-header p{
+        width: 30%;
+        align-self: flex-start;
+        padding-top: 15px;
+    }
+
+}
+
+
